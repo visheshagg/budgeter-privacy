@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgeter - Privacy Policy & Support</title>
+  <style>
+    :root {
+      --primary: #10B981;
+      --primary-dark: #059669;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 48px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+    .header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .badge {
+      display: inline-block;
+      background: #ECFDF5;
+      color: var(--primary-dark);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+    .date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 28px 0 12px 0;
+      color: var(--text-main);
+    }
+    p, ul {
+      color: #334155;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .card {
+      background: #F1F5F9;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .support-box {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 36px;
+      text-align: center;
+    }
+    .support-box h2 {
+      margin-top: 0;
+      color: #065F46;
+    }
+    .btn-email {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--primary);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    .btn-email:hover {
+      background: var(--primary-dark);
+    }
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 24px 20px;
+      }
+      .header h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Official Policy & Support</span>
+      <h1>Budgeter - Expense Tracker</h1>
+      <p class="date">Last Updated: November 2026</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to <strong>Budgeter - Expense Tracker</strong> ("we", "our", or "the app"). We respect your personal privacy and are committed to protecting it. This Privacy Policy outlines our straightforward data handling practices.
+    </p>
+
+    <div class="card">
+      <strong>The Short Version:</strong> Your financial data belongs to you. Budgeter does not require account creation, does not track you across other apps, and stores your transaction history locally on your device.
+    </div>
+
+    <h2>2. Information Stored Locally On Your Device</h2>
+    <p>
+      Budgeter is built offline-first. The following data is created and saved strictly within your device's local database (SQLite):
+    </p>
+    <ul>
+      <li>Expense entries, categories, and shopping trip totals.</li>
+      <li>Store names and recorded item prices for Price Radar comparisons.</li>
+      <li>Custom currency preferences and settings.</li>
+    </ul>
+    <p>
+      We do not run private servers to collect, upload, or sell your spending history.
+    </p>
+
+    <h2>3. Device Permissions & Camera Access</h2>
+    <p>
+      The app requests access to device hardware features only when you actively trigger corresponding functionality:
+    </p>
+    <ul>
+      <li><strong>Camera (<code>NSCameraUsageDescription</code>):</strong> Used solely when you choose to take a photo of a shopping receipt to extract expense information.</li>
+      <li><strong>Photo Library (<code>NSPhotoLibraryUsageDescription</code>):</strong> Used solely when you choose an existing receipt image from your camera roll.</li>
+    </ul>
+
+    <h2>4. AI Receipt Processing (Google Gemini API)</h2>
+    <p>
+      When you utilize the receipt scanner feature, your selected receipt image is transmitted securely over an encrypted connection (HTTPS) to the Google Gemini API solely for optical character recognition and structured text extraction (detecting item names, quantities, and prices).
+    </p>
+    <ul>
+      <li>Receipt images are processed in real-time to return expense details to your phone.</li>
+      <li>We do not store your receipt photos on external servers.</li>
+      <li>Your receipt contents are not sold, rented, or shared with third-party advertisers.</li>
+    </ul>
+
+    <h2>5. Third-Party Analytics & Tracking</h2>
+    <p>
+      Budgeter does <strong>not</strong> include third-party advertising SDKs, tracking pixels, or data broker integrations. We do not track your activity across third-party websites or services.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Our app does not knowingly collect or solicit personal information from children under the age of 13.
+    </p>
+
+    <!-- Support Section -->
+    <div class="support-box" id="support">
+      <h2>App Support & Inquiries</h2>
+      <p>
+        Have questions, feedback, or need help with Budgeter? We're here to help you get the most out of your expense tracking.
+      </p>
+      <a href="mailto:visheshaggarwal1708@gmail.com" class="btn-email">Contact Support: visheshaggarwal1708@gmail.com</a>
+    </div>
+
+    <footer>
+      &copy; 2026 Budgeter - Expense Tracker. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
